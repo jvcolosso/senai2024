@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Listar todos os clientes</h1>
+    </header>
+    <nav>
+        <a href="index.html">Listar Todos</a>
+        <a href="form.html">Cadastrar</a>
+    </nav>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <div class="tabela">
+                        <th>Id</th>
+                        <th>CPF</th>
+                        <th>Nome Completo</th>
+                        <th>Nascimento</th>
+                    </div>
+                    
+                </tr>
+            </thead>
+            <tbody id="dados">
+
+            </tbody>
+        </table>
+        <a href="/clientes/cadastrar">Cadastrar</a>
+    </main>
+    <footer>by Bryan Beckham</footer>
+</body>
+<script>
+    const daods = document.getElementById('dados');
+    fetch('http://localhost:3000/clientes')
+    .then(res => res.json())
+    .then(res => {
+        res.forEach(cli => {
+            dados.innerHTML += `
+            <tr>
+                <td>${cli.id}</td>
+                <td>${cli.cpf}</td>
+                <td>${cli.nome} ${cli.sobrenome}</td>
+                <td>${cli.nascimento}</td> 
+            </tr>
+           `; 
+        });
+    });
+</script>
+</html>
