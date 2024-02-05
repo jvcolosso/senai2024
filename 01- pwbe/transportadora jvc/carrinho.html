@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="papelaria.css">
+    <title>Papelaria do Senai</title>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Papelaria do Senai</h1>
+        <nav>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="produtos.html">Produtos</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo da Página -->
+    <section id="home">
+        <h2>Bem-vindo à Papelaria do Senai!</h2>
+        <p>Encontre os melhores produtos de papelaria aqui.</p>
+    </section>
+
+    <section id="vendas" class="esconder">
+        <h2>Vendas</h2>
+        
+        <!-- Carrinho de Compras -->
+        <div id="carrinho">
+            <h3>Carrinho de Compras</h3>
+            <ul id="lista-carrinho">
+                <!-- Os itens do carrinho serão adicionados dinamicamente aqui -->
+            </ul>
+            <p>Total: R$ <span id="total-carrinho">0.00</span></p>
+        </div>
+        
+        <!-- Produtos para Venda -->
+        <h3>Produtos para Venda</h3>
+        <div class="produto">
+            <p>Caneta</p>
+            <p>R$ 2.00</p>
+            <button onclick="adicionarAoCarrinho('Caneta', 2.00)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <p>Bloco de Notas</p>
+            <p>R$ 5.00</p>
+            <button onclick="adicionarAoCarrinho('Bloco de Notas', 5.00)">Adicionar ao Carrinho</button>
+        </div>
+        <!-- Adicione mais produtos aqui -->
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Papelaria do João. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script para o Carrinho de Compras -->
+    <script src="script.js"></script>
+
+</body>
+</html>

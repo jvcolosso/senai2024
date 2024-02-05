@@ -1,0 +1,150 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+    transition: background 0.3s ease;
+}
+
+header {
+    background: #1a237e;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: bold;
+    padding: 8px 0;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #004d40;
+}
+
+#servicos {
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    transition: box-shadow 0.3s ease;
+}
+
+.servico {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.servico:hover {
+    transform: scale(1.05);
+}
+
+.servico h3 {
+    color: #1a237e;
+}
+
+.servico p {
+    color: #555;
+}
+
+#sobre,
+#contato {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    transition: box-shadow 0.3s ease;
+}
+
+#sobre img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+#sobre p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#contato {
+    background-color: #eafafa;
+}
+
+.formulario {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #1a237e;
+}
+
+button {
+    background: #1a237e;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #004d40;
+}
+
+footer {
+    background: #1a237e;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
