@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JVC TRANSPORTES</title>
+</head>
+<body>
+    <header>
+        <h1>Clientes Cadastrados</h1>
+    </header>
+    <nav>
+       <a href="./index.html">Listar todos</a>
+       <a href="./form.html">Cadastrar</a>
+    </nav>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>CPF</th>
+                    <th>Nome Completo</th>
+                    <th>Nascimento</th>
+                    <th>Produto</th>
+                    <th>Local Entrega</th>
+                </tr>
+            </thead>
+            <tbody id="dados">
+            </tbody>
+        </table>
+    </main>
+</body>
+<script>
+    const dados = document.getElementById('dados');
+    fetch('http://localhost:3000/Clientes')
+        .then(res => res.json())
+        .then(res => {
+            res.forEach(cli => {
+                dados.innerHTML += `
+                    <tr>
+                        <td>${cli.id}</td>
+                        <td>${cli.cpf}</td>
+                        <td>${cli.nome} ${cli.sobrenome}</td>
+                        <td>${cli.nascimento}</td>
+                        <td>${cli.produto}</td>
+                        <td>${cli.entrega}</td>
+                    </tr>
+                `;
+            });
+        });
+</script>
+<footer><h2> JVC TRANSPORTES </h2></footer>   
+
+</html>

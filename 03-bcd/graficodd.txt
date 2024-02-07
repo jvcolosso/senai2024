@@ -1,0 +1,43 @@
++-------------------+            +------------------+
+|      Cliente      |            |   Transportadora |
++-------------------+            +------------------+
+| ID_cliente        |            | ID_transportadora|
+| Nome              |            | Nome             |
+| Endereço          |            | Endereço         |
+| Telefone          |            | Telefone         |
++-------------------+            +------------------+
+           |                               |
+           | realiza                       | transporta
+           |                               |
+           v                               v
++-------------------+       +-------------------+
+|     Encomenda     |       |      Veículo      |
++-------------------+       +-------------------+
+| ID_encomenda      |       | ID_veículo        |
+| Descrição         |       | Modelo            |
+| Peso              |       | Capacidade        |
+| Status            |       | Disponibilidade   |
++-------------------+       +-------------------+
+      |      |                         |
+      | é    |                         | é conduzido por
+      |      |                         |
+      v      v                         v
++-------------------+       +-------------------+
+|    Funcionário    |       |       Rota        |
++-------------------+       +-------------------+
+| ID_funcionário    |       | ID_rota           |
+| Nome              |       | Origem            |
+| Cargo             |       | Destino           |
+| Salário           |       | Distância         |
++-------------------+       +-------------------+
+                               |    passa por
+                               |
+                               v
+                        +--------------+
+                        |  Localização |
+                        +--------------+
+                        | ID_local     |
+                        | Nome         |
+                        | Latitude     |
+                        | Longitude    |
+                        +--------------+

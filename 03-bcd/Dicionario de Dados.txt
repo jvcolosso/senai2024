@@ -1,0 +1,44 @@
+Entidade: Cliente
+- ID_cliente (Chave Primária)
+- Nome
+- Endereço
+- Telefone
+
+Entidade: Encomenda
+- ID_encomenda (Chave Primária)
+- Descrição
+- Peso
+- Status
+- ID_cliente (Chave Estrangeira, referenciando Cliente.ID_cliente)
+
+Entidade: Funcionário
+- ID_funcionário (Chave Primária)
+- Nome
+- Cargo
+- Salário
+- ID_veículo (Chave Estrangeira, referenciando Veículo.ID_veículo)  <-- (para 1)
+
+Entidade: Veículo
+- ID_veículo (Chave Primária)
+- Modelo
+- Capacidade
+- Disponibilidade
+- ID_rota (Chave Estrangeira, referenciando Rota.ID_rota)   <-- (para 1)
+
+Entidade: Rota
+- ID_rota (Chave Primária)
+- Origem
+- Destino
+- Distância
+
+Entidade: Localização
+- ID_local (Chave Primária)
+- Nome
+- Latitude
+- Longitude
+
+Relacionamentos:
+- Cliente realiza Encomenda (Chave Estrangeira: Encomenda.ID_cliente -> Cliente.ID_cliente)
+- Encomenda é atribuída a um Veículo (Chave Estrangeira: Encomenda.ID_veículo -> Veículo.ID_veículo)   <-- (para muitos)
+- Veículo é conduzido por um Funcionário (Chave Estrangeira: Funcionário.ID_veículo -> Veículo.ID_veículo)   <-- (para muitos)
+- Rota passa por Localização (Chave Estrangeira: Rota.ID_local -> Localização.ID_local)
