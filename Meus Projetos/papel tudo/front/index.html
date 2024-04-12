@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventário - Papelaria PapelTudo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Inventário - Papelaria PapelTudo</h1>
+    <form>
+        <label>Id 
+            <input id="id" type="text">
+          </label>
+        <label>Nome 
+            <input id="nome" type="text">
+          </label>
+        <label>Descrição
+            <input id="descricao" type="text">
+          </label>
+        <label>Valor 
+            <input id="valor" type="text">
+          </label>
+        <label>
+            <button id="cadastrar" type="submit">Cadastrar</button>   
+        </label>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Valor</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody id="dados"> <!-- Adicionando um ID para manipulação -->
+            <!-- Os dados da tabela serão inseridos aqui dinamicamente -->
+        </tbody>
+    </table>
+   
+    <script>
+        const dados = document.getElementById('item');
+        fetch('http://localhost:3000/Clientes')
+            .then(res => res.json())
+            .then(res => {
+                res.forEach(cli => {
+                    dados.innerHTML += `
+                        <tr>
+                            <td>${cli.id}</td>
+                            <td>${cli.nome}</td>
+                            <td>${cli.descricao}</td>
+                            <td>${cli.valor}</td>
+                            <td>
+                                <button onclick="update.item('${cli.id}')" type="button">[ - ]</button>
+                                <button onclick="del.item('${cli.id}')" type="button">[ * ]</button>
+                            </td>
+                        </tr>
+                    `;
+                });
+            });
+
+        // Função para editar um item
+        function editarItem(id) {
+            const linha = document.getElementById(id);
+            const nome = linha.cells[1].innerText;
+            const descricao = linha.cells[2].innerText;
+            const valor = linha.cells[3].innerText;
+
+            document.getElementById('id').value = id;
+            document.getElementById('nome').value = nome;
+            document.getElementById('descricao').value = descricao;
+            document.getElementById('valor').value = valor;
+        }
+
+        // Função para excluir um item
+        function del(id) {
+            // Aqui você implementaria a lógica para excluir o item com o ID fornecido
+            console.log(`Excluir item com ID ${id}`);
+            // Após excluir o item, você também pode remover a linha da tabela
+            const linha = document.getElementById(id);
+            linha.remove();
+        }
+    </script>
+
+<footer>
+     <div class="footer">
+        <div>Mensagens do sistema:</div>
+        <div>Patrimônio Total: R$ 5.250,00</div>
+    </div>
+
+</footer>
+
+</body>
+</html>

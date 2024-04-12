@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mega Cursos</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body style="background-color: #f8f9fa; color: #343a40;">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mega Cursos</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="homepage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cursos.html">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="matricula.html">Matrícula</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Matrícula -->
+<div id="matricula" class="container-fluid" style="background-color: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); margin-top: 30px;">
+  <h2 style="color: #343a40;">Matrícula</h2>
+  <form>
+    <div class="form-group">
+      <label for="cursoSelect" style="font-weight: bold;">Selecione o Curso:</label>
+      <select class="form-control" id="cursoSelect">
+        <option value="1">Ciências Contábeis</option>
+        <option value="2">Direito</option>
+        <option value="3">Engenharia Civil</option>
+        <option value="4">Administração</option>
+        <option value="5">Biomedicina</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="name" style="font-weight: bold;">Nome:</label>
+      <input type="text" class="form-control" id="name" placeholder="Digite seu nome" required>
+    </div>
+    <div class="form-group">
+      <label for="email" style="font-weight: bold;">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+    </div>
+    <button type="submit" class="btn btn-primary" style="border-color: #007bff;">Matricular</button>
+  </form>
+</div>
+
+<!-- Modal para email -->
+<div class="modal fade" id="emailModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Enviar Email</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name" style="font-weight: bold;">Nome:</label>
+              <input type="text" class="form-control" id="name" placeholder="Digite seu nome" required>
+            </div>
+            <div class="form-group">
+              <label for="email" style="font-weight: bold;">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+            </div>
+            <div class="form-group">
+              <label for="message" style="font-weight: bold;">Mensagem:</label>
+              <textarea class="form-control" id="message" placeholder="Digite sua mensagem" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="background-color: #007bff; border-color: #007bff;">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+/* Estilizando a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid #F38F00; /* Adicionando uma borda à tabela */
+}
+/* Estilizando o formulário */
+form {
+    text-align: center; /* Centralizando o formulário */
+    margin-top: 20px;
+    border: 2px solid #F38F00; /* Adicionando borda laranja */
+    padding: 10px; /* Adicionando um espaço interno para a borda */
+}
+
+/* Estilizando os campos do formulário */
+h1 {
+    text-align: center;
+}
+
+/* Estilizando cabeçalho da tabela */
+th {
+    background-color:white;
+    color: black;
+    padding: 10px;
+    text-align: center; /* Centralizando o texto no cabeçalho */
+}
+
+/* Estilizando células da tabela */
+td {
+    padding: 10px;
+    text-align: center; /* Centralizando o texto nas células */
+    border-bottom: 1px solid #ddd; /* Adicionando uma borda inferior a cada linha */
+}
+
+/* Estilizando linhas alternadas da tabela */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilizando ações na última coluna */
+td:last-child {
+    text-align: center;
+}
+
+/* Estilizando botões */
+button {
+    padding: 5px 10px;
+    background-color:#F38F00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #F38F00   ;
+}
+
+footer {
+    padding: 5px 10px;
+    background-color:#F38F00;
+    color: white;
+    margin-right: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

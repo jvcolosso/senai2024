@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mega Cursos</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body{
+      background-image: url(assets/fundo.jpg);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mega Cursos</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="homepage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cursos.html">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="matricula.html">Matrícula</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Home Page -->
+<div class="bemvindo">
+  <h1>Bem-vindo à Mega Cursos</h1>
+  <p>Cursos Profissionalizantes, Reconhecidos pelo MEC</p>
+</div>
+
+<!-- Cursos -->
+<div id="cursos" class="container-fluid">
+    <div class="jumbotron">
+      <h2>Cursos</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="course-card">
+            <img src="assets/contabeis.jpg" alt="Curso 1" style="width:100%;">
+            <p>Ciências Contábeis</p>
+            <p>Este curso prepara os alunos para trabalhar na área financeira de empresas e organizações. Os estudantes aprenderão princípios contábeis, técnicas de auditoria, análise financeira, entre outros</p>
+            <button type="button" class="btn btn-primary btn-description" data-toggle="modal" data-target="#curso1Modal">Ver Mais</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="course-card">
+            <img src="assets/direito.jpg" alt="Curso 2" style="width:100%;">
+            <p>Direito</p>
+            <p>O curso de Direito prepara os alunos para trabalhar no campo jurídico, fornecendo uma compreensão profunda das leis e regulamentações. Os alunos estudarão diversos ramos do direito, como civil, penal, constitucional, entre outros.</p>
+            <button type="button" class="btn btn-primary btn-description" data-toggle="modal" data-target="#curso2Modal">Ver Mais</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="course-card">
+            <img src="assets/engenhariacivil.jpg" alt="Curso 3" style="width:100%;">
+            <p>Engenharia Civil</p>
+            <p> Este curso forma profissionais capazes de projetar, planejar, executar e gerenciar obras civis. Os alunos aprenderão sobre estruturas, materiais de construção, geotecnia, hidráulica, entre outros aspectos fundamentais da engenharia civil.</p>
+            <button type="button" class="btn btn-primary btn-description" data-toggle="modal" data-target="#curso3Modal">Ver Mais</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="course-card">
+            <img src="assets/administracao.jpg" alt="Curso 4" style="width:100%;">
+            <p>Administração</p>
+            <p>O curso de Administração prepara os alunos para gerenciar organizações e empresas. Eles estudarão tópicos como gestão de pessoas, marketing, finanças, estratégia empresarial e operações.</p>
+            <button type="button" class="btn btn-primary btn-description" data-toggle="modal" data-target="#curso4Modal">Ver Mais</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="course-card">
+            <img src="assets/biomedicina.jpg" alt="Curso 5" style="width:100%; background-color: aliceblue;">
+            <p>Biomedicina</p>
+            <p>Este curso aborda o estudo das ciências biológicas aplicadas à medicina, com foco no diagnóstico, prevenção e tratamento de doenças. Os alunos aprenderão sobre anatomia, fisiologia, bioquímica, microbiologia, entre outras disciplinas relacionadas à saúde humana.</p>
+            <button type="button" class="btn btn-primary btn-description" data-toggle="modal" data-target="#curso5Modal">Ver Mais</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- Modal para descrição do Curso 1 -->
+<div class="modal fade" id="curso1Modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Ciências Contábeis</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Areas de Atuação do curso.</p>
+        <li>Contabilidade financeira</li>
+          <li>Contabilidade gerencial</li> 
+           <li>Auditoria</li>
+            <li>Controladoria</li>
+             <li>Perícia contábil</li>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para descrição do Curso 2 -->
+<div class="modal fade" id="curso2Modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Direito</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       <p>Areas de Atuação do curso.</p>
+        <li> Direito Civil</li>
+          <li> Advocacia</li>
+            <li> Magistratura</li>
+              <li> Ministério Público</li>
+               <li> Defensoria Pública</li>
+                <li> Consultoria jurídica empresarial</li>
+                  <li> Carreiras jurídicas em órgãos públicos e autarquias</li>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para descrição do Curso 3 -->
+<div class="modal fade" id="curso3Modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Engenharia Civil</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Areas de Atuação do curso.</p>
+        <li>Construção civil</li>
+          <li>Estruturas</li>
+            <li>Geotecnia</li>
+              <li>Saneamento</li>
+                <li>Transportes</li>
+                <li>Gerenciamento de projetos</li>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para descrição do Curso 4 -->
+<div class="modal fade" id="curso4Modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Administração</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Areas de Atuação do curso.</p>
+        <li>Gestão de pessoas</li>
+        <li>Marketing</li>
+          <li>Finanças</li>
+            <li>Logística</li>
+              <li>Empreendedorismo</li>
+                <li>Consultoria empresarial</li>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para descrição do Curso 5 -->
+<div class="modal fade" id="curso5Modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Biomedicina</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Areas de Atuação do curso.</p>
+        <li>Análises clínicas</li>
+        <li>Biomedicina estética</li>
+          <li>Pesquisa científica</li>
+            <li>Indústria farmacêutica</li>
+              <li>Biotecnologia</li>
+                <li>Vigilância sanitária</li>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para email -->
+<div class="modal fade" id="emailModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Enviar Email</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" class="form-control" id="name" placeholder="Digite seu nome" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <textarea class="form-control" id="message" placeholder="Digite sua mensagem" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

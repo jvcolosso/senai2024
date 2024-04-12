@@ -11,8 +11,9 @@
         <h1>Clientes Cadastrados</h1>
     </header>
     <nav>
-       <a href="./index.html">Listar todos</a>
+       <a href="./index.html">Listar Clientes</a>
        <a href="./form.html">Cadastrar</a>
+       <a href="./atualizarcadastro.html">Atualizar Cadastro</a>
     </nav>
     <main>
         <table>
@@ -24,6 +25,7 @@
                     <th>Nascimento</th>
                     <th>Produto</th>
                     <th>Local Entrega</th>
+                    <th>Ações</th> <!-- Coluna para botões de ação -->
                 </tr>
             </thead>
             <tbody id="dados">
@@ -45,10 +47,24 @@
                         <td>${cli.nascimento}</td>
                         <td>${cli.produto}</td>
                         <td>${cli.entrega}</td>
+                        <td>
+                            <button onclick="editarCliente(${cli.editarCliente})">Editar</button>
+                            <button onclick="excluirCliente(${cli.excluirCliente})">Excluir</button>
+                        </td>
                     </tr>
                 `;
             });
         });
+
+    function editarCliente(id) {
+        // Implemente a lógica para editar o cliente com o ID fornecido
+        console.log("Editar cliente com ID:", id);
+    }
+
+    function excluirCliente(id) {
+        // Implemente a lógica para excluir o cliente com o ID fornecido
+        console.log("Excluir cliente com ID:", id);
+    }
 </script>
 <footer><h2> JVC TRANSPORTES </h2></footer>   
 

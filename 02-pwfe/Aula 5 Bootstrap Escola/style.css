@@ -1,0 +1,105 @@
+/* Estilo para os cards dos cursos */
+.course-card {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .course-card img {
+    border-radius: 5px;
+  }
+  
+  /* Estilo para o título dos cursos */
+  .course-card p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Estilo para os botões de descrição */
+  .btn-description {
+    margin-top: 10px;
+  }
+
+  /* Estilo para os homepage dos cursos */
+
+
+.bemvindo {
+background-color: white;
+background: none;
+
+    }
+
+
+  header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+  }
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+  footer {
+    background-color: #343a40;
+    color: #007bff;
+    padding: 20px 0;
+  }
+  footer p {
+    margin-bottom: 0;
+
+    /*cards dos cursos */
+  }
+  .jumbotron {
+    background-color: none;
+    color: black;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  }
+  .jumbotron h1 {
+    font-size: 3.5rem;
+  }
+  .jumbotron .lead {
+    font-size: 1.5rem;
+  }
+  .jumbotron hr {
+    border-color: #007bff;
+  }
+  .jumbotron p {
+    font-size: 1.2rem;
+  }
+  .jumbotron a.btn-primary {
+    color: #343a40;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+  .jumbotron a.btn-primary:hover {
+    background-color: #007bff;
+    color: #007bff;
+    border-color: #007bff;
+  }
+  .feature {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .feature i {
+    font-size: 3rem;
+    color: #007bff;
+  }
+  .feature h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  .feature p {
+    font-size: 1.1rem;
+  }
+
+  footer {
+    margin-top: auto;
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+  }

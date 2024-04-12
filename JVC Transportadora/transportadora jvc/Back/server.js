@@ -44,6 +44,21 @@ const read = (req, res) => {
     });
 }
 
+
+//CRUD Delete
+const remove = (req, res) => {
+    let id = req.params.id;
+    let query = `DELETE FROM Clientes WHERE id = ${id}`;
+    con.query(query, (err, result) => {
+        if (err) {
+            res.status(500).json({ error: "Erro ao excluir cliente", details: err });
+        } else {
+            res.status(200).json({ message: `Cliente com ID ${id} foi excluído com sucesso` });
+        }
+    });
+}
+
+
 //Configurações de saída - FrontEnd
 const app = express();
 app.use(express.json());

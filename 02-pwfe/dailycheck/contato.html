@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Check - Contato</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Daily Check</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="temperatura.html">Temperatura</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tarefas.html">Tarefas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modalContato">Contato</a>
+                </li>
+            </ul>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCriarTarefa">Criar Contato</button>
+        </div>
+    </nav>
+
+ <!-- Modal para Criar Tarefa -->
+ <div class="modal fade" id="modalCriarTarefa" tabindex="-1" role="dialog" aria-labelledby="modalCriarTarefaLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalCriarTarefaLabel">Criar Nova Tarefa</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Formulário para criar nova tarefa -->
+                <form id="formCriarTarefa">
+                    <div class="form-group">
+                        <label for="inputNomeTarefa">Nome:</label>
+                        <input type="text" class="form-control" id="inputNomeTarefa" placeholder="Digite o nome da tarefa" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputDataInicio">Data de Nascimento:</label>
+                        <input type="date" class="form-control" id="inputDataInicio" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputDataFim">Data de Término:</label>
+                        <input type="date" class="form-control" id="inputDataFim" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputDescricao">Descrição:</label>
+                        <textarea class="form-control" id="inputDescricao" rows="3" placeholder="Digite a descrição da tarefa"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="btnCriarTarefa">Criar Tarefa</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- JavaScript e Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

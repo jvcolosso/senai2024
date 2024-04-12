@@ -1,4 +1,4 @@
-
+--
 drop database if exists transporte;
 create database transporte;
 use transporte;
@@ -23,3 +23,6 @@ values
 ("555.555.555-55","Jacinto","Pena","2005-05-15","àcido","Quimica Jordan");
 
 select * from Clientes;
+
+
+
